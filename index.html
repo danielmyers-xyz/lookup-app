@@ -9,30 +9,47 @@
     <script src="https://js.arcgis.com/4.27/"></script>
     <link rel="stylesheet" href="style.css">
     <style>
-      html, body, #viewDiv, #appContainer {
-        height: 100%;
-        margin: 0;
+      html, body, #viewDiv {
         padding: 0;
-      }
-      #appContainer {
-        display: flex;
+        margin: 0;
         height: 100%;
-        overflow: hidden;
+        width: 100%;
       }
+
       #sidebar {
-        width: 320px;
-        padding: 16px;
-        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        padding: 20px;
         background-color: #1e1e1e;
-        color: #fff;
+        color: white;
+        z-index: 99;
+        overflow-y: auto;
+        height: 100%;
       }
+
       #viewDiv {
-        flex-grow: 1;
+        position: absolute;
+        top: 0;
+        left: 300px;
+        right: 0;
+        bottom: 0;
+      }
+
+      #folderIcon {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 32px;
+        height: 32px;
+        background-image: url('https://static.arcgis.com/images/Symbols/Shapes/BlackFolder32.png');
+        background-size: cover;
+        z-index: 100;
       }
     </style>
 </head>
 <body>
-    <div id="appContainer">
       <div id="sidebar">
           <div id="header">
               <img src="https://marincounty.maps.arcgis.com/sharing/rest/content/items/ce13474193974208a7c9def67dc83a20/data" alt="Marin County Logo">
@@ -50,6 +67,5 @@
       <div id="viewDiv"></div>
       <div id="folderIcon" title="Open Zoning Data"></div>
       <script src="app.js"></script>
-    </div>
 </body>
 </html>
