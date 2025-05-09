@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Zoning - Marin County</title>
+    <base target="_blank">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/dark/main.css">
+    <script src="https://js.arcgis.com/4.27/"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      html, body, #viewDiv, #appContainer {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+    <div id="appContainer">
+      <div id="sidebar">
+          <div id="header">
+              <img src="https://marincounty.maps.arcgis.com/sharing/rest/content/items/ce13474193974208a7c9def67dc83a20/data" alt="Marin County Logo">
+              <h1>Find My Zoning</h1>
+              <h2>County of Marin</h2>
+          </div>
+          <div id="searchWidget"></div>  <!-- ✅ ArcGIS Search Widget Here -->
+          <p>Search to learn more about a location and its zoning.</p>
+          <ul>
+              <li>Type an address or Parcel ID</li>
+              <li>Click within the map</li>
+          </ul>
+          <div id="results">Results will appear here.</div>
+      </div>
+      <div id="viewDiv"></div>
+      <div id="folderIcon" title="Open Zoning Data"></div>
+      <script src="app.js"></script>
+    </div>
+</body>
+</html>

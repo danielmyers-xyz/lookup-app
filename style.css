@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    width: 300px;
+    height: 100vh;
+    background: #1E1E1E;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header img {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 20px;
+    color: #f0b90b;
+    margin: 5px 0;
+}
+
+h2 {
+    font-size: 14px;
+    color: #d4d4d4;
+    margin: 0;
+}
+
+#searchBox {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchBtn {
+    width: 100%;
+    padding: 10px;
+    background: #f0b90b;
+    color: black;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 15px;
+    background: #2A2A2A;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+#viewDiv {
+    flex: 1;
+    height: 100vh;
+}
+
+#folderIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    background: url('https://static.arcgis.com/images/desktopapp.png') no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
