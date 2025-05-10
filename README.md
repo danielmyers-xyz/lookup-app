@@ -35,7 +35,7 @@ This app is statically hosted via [GitHub Pages](https://pages.github.com/).
 Every push to `main` automatically updates:
 
 ```
-https://danielmyersxyz.github.io/lookup-app/
+https://danielmyers-xyz.github.io/lookup-app/
 ```
 
 To test locally:
