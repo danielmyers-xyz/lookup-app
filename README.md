@@ -2,7 +2,7 @@
 
 This is a lightweight, browser-based GIS app built with the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) that allows users to look up zoning and general plan designations for parcels in Marin County, CA.
 
-👉 Try it live: [danielmyersxyz.github.io/lookup-app](https://danielmyersxyz.github.io/lookup-app)
+👉 Try it live: [danielmyersxyz.github.io/lookup-app](https://danielmyers-xyz.github.io/lookup-app/)
 
 ## 🗺️ Features
 
